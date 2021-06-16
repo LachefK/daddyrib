@@ -8,7 +8,7 @@ const {
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
 const { jogos } = require('./src/jogos')
-const { skiller } = require('./src/skiller')
+const { karib } = require('./src/skiller')
 const { menuadm } = require('./src/menuadm')
 const { plays } = require('./src/plays')
 const { menufig } = require('./src/menufig')
@@ -99,7 +99,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝐎𝐩𝐚 @${num.split('@')[0]}\n𝐁𝐞𝐦 𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐠𝐫𝐮𝐩𝐨 *${mdata.subject}*\n\n𝐥𝐞𝐢𝐚 𝐚𝐬 𝐫𝐞𝐠𝐫𝐚𝐬 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨 𝐩𝐚𝐫𝐚 𝐧𝐚𝐨 𝐬𝐞𝐫 𝐛𝐚𝐧𝐢𝐝𝐨❤️`
+				teks = `𝐎𝐩𝐚 @${num.split('@')[0]}\n𝐁𝐞𝐦 𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐁𝐥𝐨𝐜𝐨 *${mdata.subject}*\n\n𝐦𝐞𝐥𝐡𝐨𝐫 𝐬𝐞 𝐜𝐨𝐦𝐩𝐨𝐫𝐭𝐚𝐫 𝐩𝐫𝐚 𝐧𝐚𝐨 𝐬𝐞𝐫 𝐟𝐮𝐦𝐚𝐝𝐨!🔫⚰️️`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -174,11 +174,11 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = [`${setting.ownerNumber}@s.whatsapp.net`] // substitua isso pelo seu número
-            const mod = [ownerNumber,"${setting.mod}@s.whatsapp.net"]//mude o seu numero
-            const adminbotnumber = ["${setting.adminbotnumber}@s.whatsapp.net"]//mude o seu numero
-			const frendsowner = ["${setting.frendsowner}@s.whatsapp.net"]//mude o seu numero
-            const premium = ["558892594715@s.whatsapp.net","${setting.vip2}@s.whatsapp.net","${setting.vip3}@s.whatsapp.net","${setting.vip4}@s.whatsapp.net","${setting.vip5}@s.whatsapp.net","${setting.vip6}@s.whatsapp.net","${setting.vip7}@s.whatsapp.net","${setting.vip8}@s.whatsapp.net","${setting.vip9}@s.whatsapp.net","${setting.vip10}@s.whatsapp.net",]
+			const ownerNumber = [`5521969395519@s.whatsapp.net`] // substitua isso pelo seu número
+            const mod = [ownerNumber,"5521969395519@s.whatsapp.net"]//mude o seu numero
+            const adminbotnumber = ["5521969395519@s.whatsapp.net"]//mude o seu numero
+			const frendsowner = ["5521969395519@s.whatsapp.net"]//mude o seu numero
+            const premium = ["55219693955195@s.whatsapp.net","${setting.vip2}@s.whatsapp.net","${setting.vip3}@s.whatsapp.net","${setting.vip4}@s.whatsapp.net","${setting.vip5}@s.whatsapp.net","${setting.vip6}@s.whatsapp.net","${setting.vip7}@s.whatsapp.net","${setting.vip8}@s.whatsapp.net","${setting.vip9}@s.whatsapp.net","${setting.vip10}@s.whatsapp.net",]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const isPremium = premium.includes(sender)
@@ -224,7 +224,7 @@ async function starts() {
 			if (authorname != undefined) { } else { authorname = groupName }	
 			
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'PRIVATE'; if (!author) author = 'Skiller';	
+				if (!packname) packname = 'DRILLABOT'; if (!author) author = 'Karib';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -273,46 +273,46 @@ var options = {
  text: teks1, 
 contextInfo: {mentionedJid: [sender]}, 
 }
-client.sendMessage('558892594715@s.whatsapp.net', options, text, {quoted: mek})
+client.sendMessage('5521969395519@s.whatsapp.net', options, text, {quoted: mek})
 reply("Mensagem enviada ao meu dono; Spam = block + ban.")
 break
 				//_MENUS
 				case 'help':
 				case 'menu':
-wew = fs.readFileSync('./assets/foto.png')
-                client.sendMessage(from, wew, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐂𝐨𝐧𝐭𝐚 𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐚", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/botlogo.webp')} } }, caption: help(prefix) })
+wew = fs.readFileSync('./assets/pp.png')
+                client.sendMessage(from, wew, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐂𝐨𝐧𝐭𝐚 𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐚", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/images.webp')} } }, caption: help(prefix) })
 				  break
 case 'ajudantes':
-                    client.sendMessage(from, ajudantes(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": " AJUDANTES E PARCERIAS 🤠", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+                    client.sendMessage(from, ajudantes(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": " IN THE CRIB ", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'pack':
                     if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, pack18(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "By Skiller", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+                    client.sendMessage(from, pack18(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "By Karib", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'utils':
-		client.sendMessage(from, utils(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Utilizaveis", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+		client.sendMessage(from, utils(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Utilizaveis", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'plays':
-		client.sendMessage(from, plays(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Plays de Musica", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+		client.sendMessage(from, plays(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Plays de Musica", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'menuadm':
-					client.sendMessage(from, menuadm(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Menu administrador 👺", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+					client.sendMessage(from, menuadm(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Menu administrador 👺", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'modapk':
                if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, modapk(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Apks premium", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+                    client.sendMessage(from, modapk(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Apks premium", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
-case 'skiller':
-					client.sendMessage(from, skiller(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Comandos do dono", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+case 'karib':
+					client.sendMessage(from, karib(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Comandos do dono", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'menufig':
-					client.sendMessage(from, menufig(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Sticker Maker", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+					client.sendMessage(from, menufig(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Sticker Maker", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'imunes':
-					client.sendMessage(from, imunes(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Imunidade 999+", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+					client.sendMessage(from, imunes(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Imunidade 999+", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'jogos':
-					client.sendMessage(from, jogos(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Diversão", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+					client.sendMessage(from, jogos(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "Diversão", 'jpegThumbnail': fs.readFileSync('kk/sticker/images.webp')}}}})					
                 break
 case 'antifake':
 					try {
@@ -344,8 +344,8 @@ case 'antifake':
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* SKILLER\n*YOUTUBE:* https://youtube.com/c/SKILLERFFOFC\n*WPP:* wa.me/+558892594715\n*INSTA:* @joao.witorr\n\n\nEspero que tenham gostado do bot 🥵'})
-					  client.sendMessage(from, 'Ctt do meu dono ai Wa.me/558892594715 , pfv n flode',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Karib\n*YOUTUBE:* https://www.youtube.com/c/KaribTheMenace803\n*WPP:* wa.me/+55219695519\n*INSTA:* @menacefrmda803\n\n\nEspero que tenham gostado do bot 🥵'})
+					  client.sendMessage(from, 'Ctt do meu dono ai Wa.me/5521969395519 , pfv n flode',MessageType.text, { quoted: mek} )
                     break
 					
 					break
@@ -366,12 +366,12 @@ case 'antifake':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `[ 𝐓𝐫𝐚𝐧𝐬𝐦𝐢𝐬𝐬𝐚̃𝐨 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 ]\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `[ 𝐓𝐫𝐚𝐧𝐬𝐦𝐢𝐬𝐬𝐚̃𝐨 𝐃𝐑𝐈𝐋𝐋𝐀 𝐁𝐎𝐓 ]\n\n${body.slice(4)}`})
 						}
 						reply('Transmissao enviada')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ 𝐓𝐫𝐚𝐬𝐦𝐢𝐬𝐚̃𝐨 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ 𝐓𝐫𝐚𝐬𝐦𝐢𝐬𝐚̃𝐨 𝐃𝐑𝐈𝐋𝐋𝐀 𝐁𝐎𝐓 ]\n\n${body.slice(4)}`)
 						}
 						reply('Tm enviada com sucesso')
 					}
@@ -384,12 +384,12 @@ case 'aviso':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `[ 𝐀𝐯𝐢𝐬𝐨 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐁𝐎𝐓 ]\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `[ 𝐀𝐯𝐢𝐬𝐨 𝐃𝐑𝐈𝐋𝐋𝐀 𝐁𝐎𝐓 ]\n\n${body.slice(4)}`})
 						}
 						reply('Transmissao enviada')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ 𝐀𝐯𝐢𝐬𝐨 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐁𝐎𝐓 ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ 𝐀𝐯𝐢𝐬𝐨 𝐃𝐑𝐈𝐋𝐋𝐀 𝐁𝐎𝐓 ]\n\n${body.slice(4)}`)
 						}
 						reply('Tm enviada com sucesso')
 					}
@@ -402,12 +402,12 @@ case 'divulgar':
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `[ 𝐕𝐢𝐝𝐞𝐨 𝐧𝐨𝐯𝐨 𝐝𝐨 𝐬𝐤𝐢𝐥𝐥𝐞𝐫 ]\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `[ MÚSICA DA IN THE CRIB ]\n\n${body.slice(4)}`})
 						}
 						reply('Transmissao enviada')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ 𝐕𝐢𝐝𝐞𝐨 𝐧𝐨𝐯𝐨 𝐝𝐨 𝐬𝐤𝐢𝐥𝐥𝐞𝐫 ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ MÚSICA DA IN THE CRIB ]\n\n${body.slice(4)}`)
 						}
 						reply('Tm enviada com sucesso')
 					}
@@ -456,6 +456,19 @@ case '%gado':
 					var kl = ti[Math.floor(Math.random() * ti.length)]
 					client.sendMessage(from, 'tu e gado(a) será?: *'+rate+'*\n\nSua porcentagem de gado é : '+ kl+'%😏\n maluco falta comer um buraco na parede kkk', text, { quoted: mek })
 					break
+case '%drilla':		
+	            	if (args.length < 1) return reply('marque um drilla!')
+					rate = body.slice(6)
+					var ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					var kl = ti[Math.floor(Math.random() * ti.length)]
+					client.sendMessage(from, 'tu e drilla será?: *'+rate+'*\n\nSua porcentagem de drilla é : '+ kl+'%🔪\n real fumador de opps', text, { quoted: mek })
+					break
+case 'paixao':		
+	            	if (args.length < 1) return reply('marque seu par!')
+					var ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					var kl = ti[Math.floor(Math.random() * ti.length)]
+					client.sendMessage(from, 'será que se amam mesmo?:\n\nPorcentagem de paixão é : '+ kl+'%❤️\n', text, { quoted: mek })
+					break						
 case 'rankcaco':
 try{
 if(!isGroup) return reply(mess.only.group)
@@ -569,6 +582,22 @@ console.log(e)
 reply('Deu erro, tente novamente :/')
 }
 break
+case 'rankdrilla':
+try{
+if(!isGroup) return reply(mess.only.group)
+d = []
+teks = '🔪 Rank dos drillas\n'
+for(i = 0; i < 5; i++) {
+r = Math.floor(Math.random() * groupMetadata.participants.length + 0)
+teks += `️‍🔪❧ @${groupMembers[r].jid.split('@')[0]}\n`
+d.push(groupMembers[r].jid)
+}
+mentions(teks, d, true)
+} catch (e) {
+console.log(e)
+reply('Deu erro, tente novamente :/')
+}
+break					
 case 'cassino':
 const cassino = ['ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 1 ─═─ 2 ─═─ 3*\n*║*\n*║*\n*╠* Não foi dessa vez mas\n*║* continue tentando.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 2 ─═─ 3 ─═─ 1*\n*║*\n*║*\n*╠* Não foi dessa vez mas\n*║* continue tentando.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 3 ─═─ 2 ─═─ 1*\n*║*\n*║*\n*╠* Não foi dessa vez mas\n*║* continue tentando.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 1 ─═─ 3 ─═─ 2*\n*║*\n*║*\n*╠* Não foi dessa vez mas\n*║* continue tentando.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 2 ─═─ 1 ─═─ 3*\n*║*\n*║*\n*╠* Não foi dessa vez mas\n*║* continue tentando.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 3 ─═─ 1 ─═─ 2*\n*║*\n*║*\n*╠* Não foi dessa vez mas\n*║* continue tentando.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 1 ─═─ 1 ─═─ 1*\n*║*\n*║*\n*╠* PARABÉNS !!!\n*╠* VOCÊ GANHOU NO CASSINO.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 2 ─═─ 2 ─═─ 2*\n*║*\n*║*\n*╠* PARABÉNS !!!\n*╠* VOCÊ GANHOU NO CASSINO.\n*║*\n*╚═─ CASSINO ─══*','ㅤ\n*╔═─ CASSINO ─══*\n*║*\n*║*\n*╠* ROLETA DOS TRÊS\n*╠* NÚMEROS\n*║*\n*╠═─ 3 ─═─ 3 ─═─ 3*\n*║*\n*║*\n*╠* PARABÉNS !!!\n*╠* VOCÊ GANHOU NO CASSINO.\n*║*\n*╚═─ CASSINO ─══*']
 					random = cassino[Math.floor(Math.random() * (cassino.length))]
@@ -703,7 +732,7 @@ break
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: msg })
-                client.sendMessage(from, lagu, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐨 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/botlogo.webp')} } }, caption: "<//>" })
+                client.sendMessage(from, lagu, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐨 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/images.webp')} } }, caption: "<//>" })
                 break
 case 'play2':
 if (args.length < 1) return reply('Digite o nome da música')
@@ -770,7 +799,7 @@ teks =`𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌
 𝚄𝚜𝚞𝚊́𝚛𝚒𝚘 @${sender.split("@")[0]}
 𝚝𝚒𝚝𝚞𝚕𝚘 ${musica.result.title}`
 client.sendMessage(from, buffer1, image, {quoted: mek, caption: teks })
-client.sendMessage(from, buffer2, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐨 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/botlogo.webp')} } }, caption: "<//>" })
+client.sendMessage(from, buffer2, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐨 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/images.webp')} } }, caption: "<//>" })
 break
 case 'covid19':
 post = await fetchJson(`https://api-gdr2.herokuapp.com/api/covidbr`)
@@ -900,7 +929,7 @@ break
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('Skiller', authorname)} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('Karib', authorname)} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									client.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 									fs.unlinkSync(media)	
@@ -931,7 +960,7 @@ break
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('Skiller', authorname)} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('Karib', authorname)} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									client.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 									fs.unlinkSync(media)
@@ -960,7 +989,7 @@ break
 							exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								fs.unlinkSync(ranp)
 								if (err) return reply(mess.error.stick)
-								exec(`webpmux -set exif ${addMetadata('Skiller', authorname)} ${ranw} -o ${ranw}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('Karib', authorname)} ${ranw} -o ${ranw}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									client.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 									fs.unlinkSync(ranw)
